@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+
+<div class="container" id="contact_cont"> <!-- body content -->
+    <div class="vert_bar" id="contact_vert_bar">
+      <h4>CONTACT US</h4>
+      <ul>
+        <a href="#"><li>Directions/Parking</li></a>
+        <a href="#"><li>Career Opportunities</li></a>
+      </ul>
+      <a href="#" id="card_image_link">
+        <figure>
+          <img src="../static/images/pens.jpg" alt="Pens">
+          <figcaption>
+            <p class="image_caption_title">News & Events</p>
+            <p id="image_caption">Read the most current information about our firm.</p>
+          </figcaption>
+        </figure>
+      </a>
+    </div> <!--end vert_bar -->
+  <div class="contact_details">
+    <img class="contact_img" src="../static/images/contact.jpg" alt="Telephone">
+    <p class="contact_line contact_endline" id="all_font">The office hours are 8am – 5pm Monday through Friday</p>
+    <p class="contact_line" id="all_font">55 West Monroe Street</p>
+    <p class="contact_line" id="all_font">Suite 1800</p>
+    <p class="contact_line contact_endline" id="all_font">Chicago, Illinois 60603</p>
+    <p class="contact_line" id="all_font">PH: 312.322.9900</p>
+    <p class="contact_line contact_endline" id="all_font">FAX: 312.322.9977</p>
+    <p class="contact_line" id="all_font">Contact: Rosemary Panek at <a class="contact_email" href="mailto:rpanek@nzalaw.com" id="all_font">rpanek@nzalaw.com</a></p>
+  </div>
+    <div class="right_bar"> <!-- right bar -->
+      <a href="#">
+        <figure>
+          <img src="../static/images/red_dot_map2.jpg" alt="Map">
+          <figcaption>
+            <p class="image_caption_title" id="all_font">Where We Work</p>
+            <p id="image_caption">Find out more about our work coverage area.</p>
+          </figcaption>
+        </figure>
+      </a>
+      <a href="#">
+        <figure id="final_column_figure">
+          <img src="../static/images/suits.jpg" alt="Suits">
+          <figcaption>
+            <p class="image_caption_title" id="all_font">Reputation</p>
+            <p id="image_caption">Read about our admirable reputation.</p>
+          </figcaption>
+        </figure>
+      </a>
+    </div> <!-- right bar -->
+  </div> <!-- body content -->
+
+{% endblock %}

@@ -1,0 +1,82 @@
+{% block styles %}
+  <link rel="stylesheet" href="../static/css/main.css">
+{% endblock %}
+
+{% block navbar %}
+  <header>
+    <img class="logo" src="http://placehold.it/60x60" alt="">
+    <div class="nza_nav">
+      <ul>
+        {% if title == 'Who We Are' %}
+         <li class="nav-item active">
+        {% else %}
+         <li class="nav-item">
+        {% endif %}
+          <a class="nav-link" id="all_font" href="{{ url_for('index') }}">WHO WE ARE</a>
+        </li>
+        <span class="nav_border">|</span>
+
+        {% if title == 'What We Do' %}
+         <li class="nav-item active">
+        {% else %}
+         <li class="nav-item">
+        {% endif %}
+          <a class="nav-link" id="all_font" href="{{ url_for('what_we_do') }}">WHAT WE DO</a>
+        </li>
+
+        <span class="nav_border">|</span>
+        {% if title == 'News & Events' %}
+         <li class="nav-item active">
+        {% else %}
+         <li class="nav-item">
+        {% endif %}
+          <a class="nav-link" id="all_font" href="{{ url_for('news_and_events') }}">NEWS & EVENTS</a>
+        </li>
+
+        <span class="nav_border">|</span>
+        {% if title == 'Where We Work' %}
+         <li class="nav-item active">
+        {% else %}
+         <li class="nav-item">
+        {% endif %}
+          <a class="nav-link" id="all_font" href="{{ url_for('where_we_work') }}">WHERE WE WORK</a>
+        </li>
+
+        <span class="nav_border">|</span>
+        {% if title == 'Contact Us' %}
+         <li class="nav-item active">
+        {% else %}
+         <li class="nav-item">
+        {% endif %}
+          <a class="nav-link" id="all_font" href="{{ url_for('contact') }}">CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+{% endblock %}
+
+{% block content %}
+
+  <main>
+    {% block app_content %}
+
+    {% endblock %}
+  </main>
+
+  <footer>
+    <div class="footer_nav">
+      <ul>
+        <li><a href="index.html" target="_blank" id="all_font">WHO WE ARE</a></li>
+        <span class="horizontal_line">&mdash;</span>
+        <li><a href="what_we_do.html" target="_blank" id="all_font">WHAT WE DO</a></li>
+        <span class="horizontal_line">&mdash;</span>
+        <li><a href="news.html" target="_blank" id="all_font">NEW & EVENTS</a></li>
+        <span class="horizontal_line">&mdash;</span>
+        <li><a href="where_we_work.html" target="_blank" id="all_font">WHERE WE WORK</a></li>
+        <span class="horizontal_line">&mdash;</span>
+        <li><a href="contact.html" class="active" target="_blank" id="all_font">CONTACT US</a></li>
+      </ul>
+    </div>
+  </footer>
+{% endblock %}
